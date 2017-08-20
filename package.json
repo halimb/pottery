@@ -1,0 +1,25 @@
+{
+  "name": "pottery",
+  "version": "1.0.0",
+  "description": "naima bekka pottery website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halimb/pottery.git"
+  },
+  "keywords": [
+    "pottery",
+    "naima",
+    "bekka"
+  ],
+  "author": "abdel halim bouguedra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halimb/pottery/issues"
+  },
+  "homepage": "https://github.com/halimb/pottery#readme"
+}
