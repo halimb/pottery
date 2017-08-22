@@ -1,5 +1,5 @@
 module.exports = {
-	entry: __dirname + "src/scripts/main.js",
+	entry: __dirname + "/src/scripts/main.js",
 	output: {
 		filename: "bundle.js",
 		//publicPath: "/recipebox/",
@@ -20,7 +20,7 @@ module.exports = {
 			},
 
 			{
-				test: /\.(scss|sass)$/,
+				test: /\.(scss|sass|css)$/,
 				exclude: /node_modules/,
 				loader: "style-loader!css-loader!sass-loader"
 			},
