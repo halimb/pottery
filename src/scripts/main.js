@@ -1,5 +1,11 @@
 import "../styles/style.scss";
-import $ from "jquery";
+import Masonry from "masonry-layout";
 
-$("#app").addClass("test")
-$("#app").html("Hello world ! ");
+
+
+var grid = document.querySelector('.grid');
+var msnry = new Masonry( grid, {
+  // options...
+  itemSelector: '.grid-item',
+  columnWidth: 220
+});
