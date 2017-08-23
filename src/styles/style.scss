@@ -5,6 +5,26 @@ $item: 10 * $a;
 $full-item: 11 * $a;
 $gutter: $a * .5;
 
+.hidden {
+	height: 0;
+	visibility: hidden;
+}
+
+.a {
+	width: $a;
+	@extend .hidden;
+}
+
+.item {
+	width: $item;
+	@extend .hidden;
+}
+
+.gutter {
+	width: $gutter;
+	@extend .hidden;
+}
+
 @function size($n) {
 	@return $n * $full-item - 2 * $gutter;
 }
