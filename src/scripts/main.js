@@ -1,4 +1,5 @@
 import "../styles/style.scss";
+import content from "../content.json";
 import Masonry from "masonry-layout";
 
 var a, item, gutter, fullItem;
@@ -22,8 +23,10 @@ var a, item, gutter, fullItem;
 var grid = document.querySelector('.grid');
 var msnry = new Masonry( grid, {
   // options...
-  itemSelector: '.grid-item',
+  itemSelector: '.grid-item',	
   columnWidth: fullItem
 });
 
-console.log(fullItem)
+var txt = document.getElementById("txt");
+txt.innerHTML = content.txt.lorem;
+

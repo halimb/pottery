@@ -1,9 +1,13 @@
+@import "./Raleway";
+
 $bg: #bd5;
 
 $a: 20px;
 $item: 10 * $a;
 $full-item: 11 * $a;
 $gutter: $a * .5;
+
+
 
 .hidden {
 	height: 0;
@@ -30,6 +34,7 @@ $gutter: $a * .5;
 }
 
 .grid {
+	font-family: "Raleway";
 	position: absolute;
 	right: 0; left: 0;
 	margin: auto;
@@ -55,4 +60,27 @@ $gutter: $a * .5;
 .tall {
 	width: size(2);
 	height: size(3);
+}
+
+.card {
+	width: size(2);
+	height: size(1.6);
+}
+
+.wide {
+	width: size(2);
+	height: size(1);
+}
+
+.focus {
+	background-color: white;
+}
+
+.text {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding: $a * 2;
+	font-size: $a * .75;
 }
