@@ -5,6 +5,10 @@
 
 	"img": {
 		"pottery": {
+			"fatcup": {
+				"thumb": "./src/img/pics/fatcup/01.png",
+				"reel": "./src/img/pics/fatcup/##.png|01..24"
+			}
 		}
 	}
 }

@@ -2,10 +2,10 @@
 
 $bg: #bd5;
 
-$a: 20px;
+$a: 17px;
 $item: 10 * $a;
-$full-item: 11 * $a;
-$gutter: $a * .5;
+$gutter: $a * .2;
+$full-item: $item + 2 * $gutter;
 
 
 
@@ -39,15 +39,25 @@ $gutter: $a * .5;
 	right: 0; left: 0;
 	margin: auto;
 	width: 95%;//5 * $full-item;
-	background-color: #fba;
+	background-color: #fff;//#fba;
 	padding: $gutter;
 }
 .grid-item {
 	background: $bg;
 	margin: $gutter;
+	// transition: .5s;
+}
+
+.grid-item:hover {
+	box-shadow: 0 0 4px 4px rgba(0,0,0,.1);
 }
 
 .medium {
+	height: size(2);
+	width: size(2);
+}
+
+.small {
 	height: $item;
 	width: $item;
 }

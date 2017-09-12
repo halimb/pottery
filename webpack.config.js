@@ -1,3 +1,4 @@
+var webpack = require("webpack");
 module.exports = {
 	entry: __dirname + "/src/scripts/main.js",
 	output: {
@@ -28,7 +29,7 @@ module.exports = {
 			{
 				test: /\.(png|svg)$/, 
 				exclude: /node_modules/,
-				loader: "url-loader"
+				loader: "file-loader"
 			},
 			
 			{
@@ -41,5 +42,12 @@ module.exports = {
             	loader: "json-loader"
             }
 		]
-	}
+	},
+
+	plugins: [
+        new webpack.ProvidePlugin({
+           $: "jquery",
+           jQuery: "jquery"
+       })
+    ]
 }

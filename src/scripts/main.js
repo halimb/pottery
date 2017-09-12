@@ -1,7 +1,8 @@
 import "../styles/style.scss";
 import content from "../content.json";
 import Masonry from "masonry-layout";
-
+import jQuery from "jquery";
+import reel from "jquery.reel";
 var a, item, gutter, fullItem;
 
 //Initialize variables
@@ -31,3 +32,15 @@ var msnry = new Masonry( grid, {
 var txt = document.getElementById("txt");
 txt.innerHTML = content.txt.lorem;
 
+//360 images
+var get360 = (name) => {
+	var path = content.img.pottery[name].reel;
+	var thumbnail = content.img.pottery[name].thumb;
+	return "<img class='reel'"+
+			"src='" + thumbnail + "'" +
+			"data-images='" + path + "'>";
+}
+var fatcup = get360("fatcup");
+console.log(fatcup)
+document.getElementById("fatcup")
+	.innerHTML = fatcup;
