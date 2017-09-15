@@ -6,8 +6,8 @@
 	"img": {
 		"pottery": {
 			"fatcup": {
-				"thumb": "./src/img/pics/fatcup/01.png",
-				"reel": "./src/img/pics/fatcup/##.png|01..24"
+				"thumb": "11.png",
+				"reel": "##.png|01..24"
 			}
 		}
 	}

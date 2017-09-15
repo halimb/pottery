@@ -29,7 +29,7 @@ module.exports = {
 			{
 				test: /\.(png|svg)$/, 
 				exclude: /node_modules/,
-				loader: "file-loader"
+				loader: "file-loader?name=[name].[ext]"
 			},
 			
 			{

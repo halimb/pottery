@@ -3,6 +3,12 @@ import content from "../content.json";
 import Masonry from "masonry-layout";
 import jQuery from "jquery";
 import reel from "jquery.reel";
+
+var images = require.context(
+	"../img", 
+	true, 
+	/\.png$/);
+console.log([images])
 var a, item, gutter, fullItem;
 
 //Initialize variables
