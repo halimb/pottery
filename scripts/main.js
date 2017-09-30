@@ -42,9 +42,14 @@ var get360 = (name) => {
 
 function loadContent() {
 	var txt = document.getElementById("txt");
-	txt.innerHTML = content.txt.lorem;
+	if(txt) {
+		txt.onclick = () => window.location.href = "test.html"
+		txt.innerHTML = content.txt.lorem;
+	}
 	var pot = get360("round-pot");
 	console.log(pot)
 	document.getElementById("round-pot").innerHTML = pot;
 	$.reel.scan();
 }
+
+
