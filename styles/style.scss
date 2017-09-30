@@ -93,3 +93,8 @@ $full-item: $item + 2 * $gutter;
 	padding: $a * 2;
 	font-size: $a * .75;
 }
+
+img {
+	height: 100%;
+	width: 100%;
+}

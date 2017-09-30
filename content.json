@@ -4,11 +4,9 @@
 	},
 
 	"img": {
-		"pottery": {
-			"fatcup": {
-				"thumb": "11.png",
-				"reel": "##.png|01..24"
-			}
+		"round-pot": {
+			"thumb": "img/pics/round-pot/11.png",
+			"reel": "img/pics/round-pot/##.png|01..23"
 		}
 	}
 }
